@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { experience, profile } from '~/data/profile'
+import { experience } from '~/data/profile'
 </script>
 
 <template>
@@ -17,12 +17,11 @@ import { experience, profile } from '~/data/profile'
             </h3>
             <p class="text-[11px] font-bold">{{ e.period }}</p>
           </div>
-          <p class="mt-2 text-xs leading-relaxed">{{ e.summary }}</p>
+          <ul class="mt-2 flex list-disc flex-col gap-1.5 pl-4 text-xs leading-relaxed marker:text-violet">
+            <li v-for="pt in e.points" :key="pt">{{ pt }}</li>
+          </ul>
         </li>
       </ol>
-      <a :href="profile.resume" class="brutal-btn mt-8 bg-white !text-violet">
-        View full resume <Icon name="lucide:arrow-right" size="14" aria-hidden="true" />
-      </a>
     </div>
   </section>
 </template>

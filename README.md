@@ -13,7 +13,7 @@ npm run dev
 
 - All content (name, bio, skills, projects, certifications, experience, socials): `app/data/profile.ts`
 - Colors / shadows (design tokens): `app/assets/css/main.css` (`@theme`)
-- Replace `public/og-image.png` (1200x630) and add `public/resume.pdf`
+- Replace `public/profile.webp` (hero photo) and `public/og-image.png` (1200x630)
 - Set the production URL for canonical, sitemap, robots and Open Graph:
 
 ```bash

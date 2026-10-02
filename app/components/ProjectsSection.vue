@@ -24,7 +24,7 @@ function onScroll() {
     <div class="mb-6 flex items-start justify-between gap-4">
       <div class="flex flex-col gap-4">
         <h2 id="projects-title" class="font-display text-xl uppercase">Featured projects</h2>
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="brutal-btn w-fit bg-white">
+        <a href="https://github.com/jowy2211" target="_blank" rel="noopener noreferrer" class="brutal-btn w-fit bg-white">
           View all projects <Icon name="lucide:arrow-right" size="14" aria-hidden="true" />
         </a>
       </div>
@@ -40,7 +40,7 @@ function onScroll() {
 
     <div
       ref="track"
-      class="no-scrollbar flex snap-x snap-mandatory overflow-x-auto"
+      class="no-scrollbar relative flex snap-x snap-mandatory overflow-x-auto"
       role="group"
       aria-roledescription="carousel"
       aria-label="Featured projects"
@@ -62,15 +62,14 @@ function onScroll() {
             </div>
           </div>
           <div class="flex flex-col gap-3 p-5">
-            <h3 class="font-display text-lg uppercase">{{ p.title }}</h3>
+            <div>
+              <h3 class="font-display text-lg uppercase">{{ p.title }}</h3>
+              <p class="mt-1 text-[11px] font-bold text-violet">{{ p.company }}</p>
+            </div>
             <p class="text-xs leading-relaxed">{{ p.description }}</p>
             <ul class="flex flex-wrap gap-2">
               <li v-for="t in p.tags" :key="t" class="border-2 border-ink px-2 py-0.5 text-[10px] font-bold">{{ t }}</li>
             </ul>
-            <a :href="p.href" class="brutal-btn mt-1 w-fit bg-white">
-              View details <Icon name="lucide:arrow-right" size="14" aria-hidden="true" />
-              <span class="sr-only"> of {{ p.title }}</span>
-            </a>
           </div>
         </div>
       </article>

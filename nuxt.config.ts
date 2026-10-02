@@ -45,10 +45,10 @@ export default defineNuxtConfig({
       sizeLimitKb: 0,
       // Icons referenced from app/data/profile.ts are dynamic, so list them explicitly.
       icons: [
-        'simple-icons:github', 'simple-icons:linkedin', 'simple-icons:x',
-        'simple-icons:react', 'simple-icons:typescript', 'simple-icons:nodedotjs',
-        'simple-icons:tailwindcss', 'simple-icons:mongodb', 'simple-icons:git',
-        'lucide:mail',
+        'simple-icons:github', 'simple-icons:linkedin',
+        'simple-icons:nestjs', 'simple-icons:nuxtdotjs', 'simple-icons:react', 'simple-icons:laravel',
+        'simple-icons:postgresql', 'simple-icons:mongodb', 'simple-icons:mysql', 'simple-icons:mariadb',
+        'lucide:mail', 'lucide:phone',
       ],
     },
     mode: 'svg',

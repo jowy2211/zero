@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen overflow-x-clip p-3 pr-4 sm:p-6">
+  <div class="min-h-screen p-3 sm:p-6">
     <a
       href="#main"
       class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-lime focus:p-3 focus:border-2 focus:border-ink"
